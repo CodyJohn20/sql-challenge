@@ -1,3 +1,3 @@
-SELECT employees.emp_no,employees.last_name,employees.first_name,employees.sex,salaries.salary 
+SELECT first_name, last_name, hire_date
 FROM employees
-JOIN salaries ON employees.emp_no = salaries.emp_no;
+WHERE hire_date >= '1985-12-31' AND hire_date < '1987-01-01';
